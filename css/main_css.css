@@ -72,3 +72,23 @@ img.social_media:hover {
 	opacity: 1.0;
 	filter: alpha(opacity=100); /* IE8 & Lower */
 }
+
+article {
+	margin: 5px;
+	background-color: #333;
+	color: #EEE;
+	height: 200px;
+}
+
+section {
+	margin-bottom: 0px !important;
+}
+
+.row-centered {
+	text-align: center;
+}
+
+.col-centered {
+	display: inline-block;
+	float: none;
+}
