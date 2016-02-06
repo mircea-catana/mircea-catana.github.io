@@ -15,10 +15,17 @@
 
         <!-- Custom theme -->
         <link rel="stylesheet" type="text/css" href="css/main_css.css">
+        
+        <!-- Temp Redirect to wordpress -->
+        <script type="text/javascript">
+            function RedirectWeb() {
+               window.location="http://www.mirceacatana.com";
+            }
+        </script>
 
     </head>
 
-    <body>
+    <body onload="RedirectWeb()">
         <header id="header" class="col-lg-12">
             <div class="row">
                 <h1 style="font-family: 'Jura', sans-serif;">Mircea Catana - Game Programmer</h1>
@@ -96,7 +103,7 @@
         <!-- Custom JavaScript -->
         <script src="js/main_js.js"></script>
         <script src="js/game.js"></script>
-
+        
     </body>
 
 </html> 
