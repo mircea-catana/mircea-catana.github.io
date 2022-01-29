@@ -1,109 +1,30 @@
 <!DOCTYPE html>
-<html>
-
-    <head>
-        <title>Mircea Catalin Catana</title>
-
-        <!-- Bootstrap compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-
-        <!-- Bootstrap theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
-
-        <!-- Jura Font -->
-        <link href='https://fonts.googleapis.com/css?family=Jura' rel='stylesheet' type='text/css'>
-
-        <!-- Custom theme -->
-        <link rel="stylesheet" type="text/css" href="css/main_css.css">
-        
-        <!-- Temp Redirect to wordpress -->
-        <script type="text/javascript">
-            function RedirectWeb() {
-               window.location="http://www.mirceacatana.com";
-            }
-        </script>
-
-    </head>
-
-    <body onload="RedirectWeb()">
-        <header id="header" class="col-lg-12">
-            <div class="row">
-                <h1 style="font-family: 'Jura', sans-serif;">Mircea Catana - Game Programmer</h1>
-            </div>
-            <div class="row">
-                <a href="https://github.com/mircea-catana"><img src="images/github_icon.png" class="social_media"/></a>
-                <a href="https://uk.linkedin.com/in/catanamircea"><img src="images/linkedin_icon.png" class="social_media"/></a>
-                <a href="https://twitter.com/mirceacatana"><img src="images/twitter_icon.png" class="social_media"/></a>
-            </div>
-        </header>
-
-        <div class="jumbotron special" style="background-color:#333;">
-                <canvas id="canv" width="640" height="480"></canvas>
-        </div>
-
-        <nav id="nav" class="navbar">
-            <ul class="navigation">
-                <a href="#header" class="scrollto"><li class="navigation">HOME</li></a>
-                <a href="#about" class="scrollto"><li class="navigation">ABOUT</li></a>
-                <a href="#portfolio" class="scrollto"><li class="navigation">PORTFOLIO</li></a>
-                <a href="#contact" class="scrollto"><li class="navigation">CONTACT</li></a>
-            </ul>
-        </nav>
-
-        <!-- ABOUT SECTION -->
-        <section id="about" class="jumbotron special">
-            <div class="container">
-                <h3>About</h3>
-            </div>
-        </section>
-
-        <!-- PORTFOLIO SECTION -->
-        <section id="portfolio" class="jumbotron">
-            <div class="container">
-                <h3>Portfolio</h3>
-                <div class="container row-centered">
-                    <article class="col-xs-12 col-lg-3 col-centered"></article>
-                    <article class="col-xs-12 col-lg-3 col-centered"></article>
-                    <article class="col-xs-12 col-lg-3 col-centered"></article>
-
-                    <article class="col-xs-12 col-lg-3 col-centered"></article>
-                    <article class="col-xs-12 col-lg-3 col-centered"></article>
-                    <article class="col-xs-12 col-lg-3 col-centered"></article>
-
-                    <article class="col-xs-12 col-lg-3 col-centered"></article>
-                    <article class="col-xs-12 col-lg-3 col-centered"></article>
-                    <article class="col-xs-12 col-lg-3 col-centered"></article>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- CONTACT SECTION -->
-        <section id="contact" class="jumbotron special">
-            <div class="container">
-                <h3>Contact</h3>
-            </div>
-        </section>
-
-        <footer class="col-lg-12 footer">
-            <div>
-                &copy; 2015 All rights reserved - Mircea Catalin Catana
-            </div>
-        </footer>
-
-        <!-- jQuery -->
-        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-        
-        <!-- jQuery Easing -->
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
-
-        <!-- Bootstrap JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
-
-        <!-- Custom JavaScript -->
-        <script src="js/main_js.js"></script>
-        <script src="js/game.js"></script>
-        
-    </body>
-
-</html> 
+<html lang="en-us">
+  <head>
+    <!-- Hi -->
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Nope Ropes</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/WebGL.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body style="background-color: black; color: #EEE;">
+    <div class="webgl-content">
+      <div style="align-content: center; padding-bottom: 5%; text-align: center; font-family: Helvetica, Verdana, Arial, sans-serif; font-size: 18px;">
+        <h1> REBUILDING </h1>
+        <p> In the meantime enjoy some local multiplayer snake! </p>
+      </div>
+      <div id="unityContainer" style="width: 600px; height: 600px"></div>
+      <div class="footer">
+        <!--<div class="webgl-logo"></div>-->
+        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+        <div class="title">Maximize</div>
+      </div>
+    </div>
+  </body>
+</html>
